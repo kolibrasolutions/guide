@@ -145,6 +145,18 @@ export default function FaseAcompanhamentoPage() {
           <li>Celebre as conquistas e aprenda com os desafios.</li>
         </ul>
       </AccordionItem>
+
+      <div className="relative w-full flex items-center justify-between py-8">
+        {/* Linha */}
+        <div className="absolute left-0 right-0 top-8 h-1 bg-blue-800 z-0"></div>
+        {/* Pontos */}
+        {[1,2,3,4,5].map((fase, i) => (
+          <div key={i} className="flex flex-col items-center z-10">
+            <div className={`w-6 h-6 rounded-full border-2 ${fase === 1 ? 'bg-orange-500 border-orange-500' : 'border-blue-800 bg-white'} mb-2`}></div>
+            <span className={`mt-2 font-bold ${fase === 1 ? 'text-orange-500' : 'text-blue-800'}`}>Fase {fase}</span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
