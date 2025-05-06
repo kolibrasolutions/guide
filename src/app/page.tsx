@@ -35,19 +35,21 @@ const PizzaChartSection = () => {
   return (
     <section id="pizza-chart" className="min-h-screen bg-kolibra-gray-light py-16 px-8 flex flex-col items-center">
       <h2 className="text-4xl font-bold text-primary mb-12 text-center font-montserrat">As 10 Fatias Essenciais do Seu Negócio</h2>
-      <div className="w-full max-w-2xl">
-        <InteractivePizzaChart onSliceSelect={handleSliceSelect} />
-      </div>
-      {selectedSlice && (
-        <div id="pizza-info-box" className="mt-8 p-6 bg-white shadow-xl rounded-lg max-w-2xl w-full text-left text-foreground animate-accordion-down">
-          <h3 className="text-2xl font-bold text-primary mb-3 font-montserrat">{selectedSlice.name}</h3>
-          <div className="space-y-2 font-open-sans">
-            <p><strong>O que é?</strong> {selectedSlice.description}</p>
-            <p><strong>Por que é vital?</strong> {selectedSlice.vital}</p>
-            <p><strong>Como a Kolibra ajuda?</strong> {selectedSlice.kolibraHelps}</p>
-          </div>
+      <div className="w-full max-w-5xl flex flex-col md:flex-row items-start justify-center gap-8">
+        <div className="w-full md:w-1/2 max-w-2xl">
+          <InteractivePizzaChart onSliceSelect={handleSliceSelect} />
         </div>
-      )}
+        {selectedSlice && (
+          <div id="pizza-info-box" className="w-full md:w-1/2 mt-8 md:mt-0 p-6 bg-white shadow-xl rounded-lg text-left text-foreground animate-accordion-down">
+            <h3 className="text-2xl font-bold text-primary mb-3 font-montserrat">{selectedSlice.name}</h3>
+            <div className="space-y-2 font-open-sans">
+              <p><strong>O que é?</strong> {selectedSlice.description}</p>
+              <p><strong>Por que é vital?</strong> {selectedSlice.vital}</p>
+              <p><strong>Como a Kolibra ajuda?</strong> {selectedSlice.kolibraHelps}</p>
+            </div>
+          </div>
+        )}
+      </div>
     </section>
   );
 };

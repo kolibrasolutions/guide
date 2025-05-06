@@ -90,7 +90,14 @@ export default function FaseAcompanhamentoPage() {
       </AccordionItem>
 
       <h2 className="text-2xl font-bold text-primary mt-8 mb-4 font-montserrat">Processos Internos da Kolibra para esta Fase</h2>
-      <ClickableFlowchart data={{}} />
+      <div className="w-full max-w-2xl">
+        <InteractivePizzaChart onSliceSelect={handleSliceSelect} />
+      </div>
+      {selectedSlice && (
+        <div id="pizza-info-box" className="mt-8 p-6 ...">
+          {/* ... */}
+        </div>
+      )}
 
       <h2 className="text-2xl font-bold text-primary mt-8 mb-4 font-montserrat">Guia de Aplicação para a Equipe</h2>
       <p>O acompanhamento é essencial para garantir o sucesso sustentável do cliente. Mantenha o foco na análise de dados e na proatividade.</p>
