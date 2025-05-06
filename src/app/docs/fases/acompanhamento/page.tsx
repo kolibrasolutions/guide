@@ -111,7 +111,10 @@ export default function FaseAcompanhamentoPage() {
           <InteractivePizzaChart onSliceSelect={handleSliceSelect} />
         </div>
         {selectedSlice && (
-          <div id="pizza-info-box" className="w-full md:w-[420px] mt-8 md:mt-0 p-6 bg-white shadow-xl rounded-lg text-left text-foreground animate-accordion-down border-2 border-dashed border-blue-400">
+          <div
+            id="pizza-info-box"
+            className="w-full md:w-[420px] md:mx-auto p-6 bg-white shadow-xl rounded-lg text-left text-foreground animate-accordion-down border-2 border-dashed border-blue-400"
+          >
             <h3 className="text-2xl font-bold text-primary mb-3 font-montserrat">{selectedSlice.name}</h3>
             <div className="space-y-2 font-open-sans">
               <p><strong>O que é?</strong> {selectedSlice.description}</p>
