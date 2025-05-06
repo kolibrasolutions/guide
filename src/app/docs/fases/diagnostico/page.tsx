@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 // Re-usable interactive components (assuming they might be moved to a shared components folder later)

@@ -1,3 +1,146 @@
 {
-  "pages": {}
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/chunks/app/_not-found/page-7bb17f9f3700fe24.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/css/e237e4364fb4454c.css",
+      "static/chunks/app/layout-6259df4dedebda37.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/chunks/399-194b5d1c37c012e9.js",
+      "static/chunks/app/page-bd9bca4021e98a38.js"
+    ],
+    "/docs/layout": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/chunks/app/docs/layout-c3969604123d38a4.js"
+    ],
+    "/docs/componentes/gestao-financas/page": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/chunks/app/docs/componentes/gestao-financas/page-0cc28a61139a1ab9.js"
+    ],
+    "/docs/componentes/experiencia-cliente/page": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/chunks/app/docs/componentes/experiencia-cliente/page-bd2148f590409924.js"
+    ],
+    "/docs/componentes/identidade/page": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/chunks/app/docs/componentes/identidade/page-cb599a19d0d8eb42.js"
+    ],
+    "/docs/componentes/marca-comunicacao/page": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/chunks/app/docs/componentes/marca-comunicacao/page-72d41f6f4f1b2e0b.js"
+    ],
+    "/docs/componentes/marketing-vendas/page": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/chunks/app/docs/componentes/marketing-vendas/page-f17426dc1eb2bb59.js"
+    ],
+    "/docs/componentes/inovacao-adaptacao/page": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/chunks/app/docs/componentes/inovacao-adaptacao/page-d57cac695ed61db5.js"
+    ],
+    "/docs/componentes/mercado/page": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/chunks/app/docs/componentes/mercado/page-2c401c972fcc0fd6.js"
+    ],
+    "/docs/componentes/operacoes-processos/page": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/chunks/app/docs/componentes/operacoes-processos/page-99ce821be68d38aa.js"
+    ],
+    "/docs/componentes/portfolio/page": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/chunks/app/docs/componentes/portfolio/page-95fa4ed1e0495f4c.js"
+    ],
+    "/docs/componentes/proposta-valor/page": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/chunks/app/docs/componentes/proposta-valor/page-088f5a2d0e430965.js"
+    ],
+    "/docs/fases/acompanhamento/page": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/chunks/app/docs/fases/acompanhamento/page-b8e69fae29640547.js"
+    ],
+    "/docs/fases/cocriacao-desenvolvimento/page": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/chunks/app/docs/fases/cocriacao-desenvolvimento/page-7a56b096728dd956.js"
+    ],
+    "/docs/fases/descoberta/page": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/chunks/app/docs/fases/descoberta/page-e53f4b6a0db31bdf.js"
+    ],
+    "/docs/fases/diagnostico/page": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/chunks/app/docs/fases/diagnostico/page-6c44414ad907c959.js"
+    ],
+    "/docs/fases/implementacao-lancamento/page": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/chunks/app/docs/fases/implementacao-lancamento/page-bb0dcc05b1770aad.js"
+    ],
+    "/docs/page": [
+      "static/chunks/webpack-3c3673b97fa29aae.js",
+      "static/chunks/ebe977ba-aaf01c3794673775.js",
+      "static/chunks/411-728d7d8857e64c2f.js",
+      "static/chunks/main-app-4a8736d54b6ddb01.js",
+      "static/chunks/app/docs/page-d76b09bd66342743.js"
+    ]
+  }
 }
