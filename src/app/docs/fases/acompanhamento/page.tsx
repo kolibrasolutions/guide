@@ -106,7 +106,7 @@ export default function FaseAcompanhamentoPage() {
       </AccordionItem>
 
       <h2 className="text-2xl font-bold text-primary mt-8 mb-4 font-montserrat">Processos Internos da Kolibra para esta Fase</h2>
-      <div className="w-full max-w-5xl flex flex-col md:flex-row items-start justify-center gap-8">
+      <div className="w-full max-w-5xl flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="w-full md:w-[420px] flex-shrink-0">
           <InteractivePizzaChart onSliceSelect={handleSliceSelect} />
         </div>
