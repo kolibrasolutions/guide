@@ -1,5 +1,6 @@
 "use client";
-import React from "react";
+import React, { useState, useCallback } from "react";
+import InteractivePizzaChart from "@/components/InteractivePizzaChart";
 
 // Re-usable interactive components (assuming they might be moved to a shared components folder later)
 const AccordionItem = ({ title, children }: { title: string; children: React.ReactNode }) => {
@@ -63,7 +64,22 @@ const InteractiveChecklist = ({ items }: { items: { id: string; label: string; c
   );
 };
 
+// Definir a interface SliceInfo igual à da home
+interface SliceInfo {
+  name: string;
+  description: string;
+  vital: string;
+  kolibraHelps: string;
+  icon?: string;
+}
+
 export default function FaseAcompanhamentoPage() {
+  const [selectedSlice, setSelectedSlice] = useState<SliceInfo | null>(null);
+
+  const handleSliceSelect = useCallback((data: SliceInfo | null) => {
+    setSelectedSlice(data);
+  }, []);
+
   const checklistExample = [
     { id: "f5_task1", label: "Monitorar continuamente os KPIs definidos no Plano Estratégico.", completed: false },
     { id: "f5_task2", label: "Gerar e apresentar relatórios periódicos de performance ao cliente.", completed: false },
@@ -90,14 +106,21 @@ export default function FaseAcompanhamentoPage() {
       </AccordionItem>
 
       <h2 className="text-2xl font-bold text-primary mt-8 mb-4 font-montserrat">Processos Internos da Kolibra para esta Fase</h2>
-      <div className="w-full max-w-2xl">
-        <InteractivePizzaChart onSliceSelect={handleSliceSelect} />
-      </div>
-      {selectedSlice && (
-        <div id="pizza-info-box" className="mt-8 p-6 ...">
-          {/* ... */}
+      <div className="w-full max-w-5xl flex flex-col md:flex-row items-start justify-center gap-8">
+        <div className="w-full md:w-[420px] flex-shrink-0">
+          <InteractivePizzaChart onSliceSelect={handleSliceSelect} />
         </div>
-      )}
+        {selectedSlice && (
+          <div id="pizza-info-box" className="w-full md:w-[420px] mt-8 md:mt-0 p-6 bg-white shadow-xl rounded-lg text-left text-foreground animate-accordion-down border-2 border-dashed border-blue-400">
+            <h3 className="text-2xl font-bold text-primary mb-3 font-montserrat">{selectedSlice.name}</h3>
+            <div className="space-y-2 font-open-sans">
+              <p><strong>O que é?</strong> {selectedSlice.description}</p>
+              <p><strong>Por que é vital?</strong> {selectedSlice.vital}</p>
+              <p><strong>Como a Kolibra ajuda?</strong> {selectedSlice.kolibraHelps}</p>
+            </div>
+          </div>
+        )}
+      </div>
 
       <h2 className="text-2xl font-bold text-primary mt-8 mb-4 font-montserrat">Guia de Aplicação para a Equipe</h2>
       <p>O acompanhamento é essencial para garantir o sucesso sustentável do cliente. Mantenha o foco na análise de dados e na proatividade.</p>
